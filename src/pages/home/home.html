@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome Filmes System!</h2>
+
+<form (submit)="atualizaUsuario()">
+  <ion-list>
+
+      <ion-item>
+        <ion-input type="nome" placeholder="Nome" [(ngModel)] = "objeto.usr_nome" name="nome" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="email" placeholder="Email" [(ngModel)] = "objeto.usr_email" name="email" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input type="endereco" placeholder="Endereco" [(ngModel)] = "objeto.usr_endereco" name="endereco" required></ion-input>
+      </ion-item>
+
+  </ion-list>
+
+  <button ion-button block>Atualiza</button>
+
+</form>
+</ion-content>
